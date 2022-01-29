@@ -28,7 +28,13 @@ function subsidyCalculation () {
             subsidy = baseSubsidyP2D + (distance * 0.13);
             break;
         case distance <= 400:
+            subsidy = baseSubsidyP2D + (distance * 0.13);
+            break;
+        case distance <= 500:
             subsidy = baseSubsidyP2D + (distance * 0.12);
+            break;
+        case distance > 500:
+            subsidy = baseSubsidyP2D + (distance * 0.10);
             break;
     }
 }
