@@ -86,7 +86,7 @@ calculateButton.onclick = function showResult() {
     let distanceValue = parseInt(distance.value);
     let userChoice = distributionMode.value;
     subsidyCalculation(userChoice, distanceValue);
-    resultP.innerHTML = `<p class="fw-bold mt-5 px-5">Total Subsidy Amount Taka ${subsidy}</p>`;
+    resultP.innerHTML = `<p class="fw-bold mt-5 px-5">Total Subsidy Amount Taka ${subsidy.toFixed(2)}</p>`;
     // console.log(userChoice);
     // console.log(distanceValue);
     // console.log(subsidy);
